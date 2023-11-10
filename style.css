@@ -21,7 +21,9 @@ header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;p
 #navbar a:hover{background-color: #121212;color: #e2e2e2;}
 #main-doc{
     position: relative;left: 175px;
-    width: calc(100% - 175px);padding: 10px 0px 50px 0px;
+    /* because margin will not work with position ########### */
+    width: calc(100% - 175px);padding: 10px 0px 50px 0px; 
+    
 }
 p{font-size: 16px;padding: 6px 0px 2px 0px;}
 ul, ol{padding: 10px 30px;background-color: #e2e2e2;width: fit-content;}
@@ -43,4 +45,5 @@ pre{
     pre{max-width: 100%;overflow-x: auto;}
 }
 
-
+/* new for me
+width: fit-content; */
