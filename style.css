@@ -12,7 +12,10 @@ header{margin: 25px 0px 5px 0px;font-size: 24px;font-weight: bold;}
 header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;padding: 2px;}
 #navbar header{text-align: center;}
 #navbar a{
-    display: block;width: calc(100% - 8px);
+
+    display: block;
+    /* trick */
+    width: calc(100% - 8px);
     text-decoration: none;text-align: center;
     padding: 5px 0px;margin: 4px;
     background-color: #e2e2e2;color: #121212;
@@ -21,7 +24,8 @@ header:not(#navbar header){border-bottom: 2px solid #121212;width: fit-content;p
 #navbar a:hover{background-color: #121212;color: #e2e2e2;}
 #main-doc{
     position: relative;left: 175px;
-    /* because margin will not work with position ########### */
+    /* trick
+    because margin will not work with position ########### */
     width: calc(100% - 175px);padding: 10px 0px 50px 0px; 
     
 }
